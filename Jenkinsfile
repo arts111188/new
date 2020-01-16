@@ -1,4 +1,4 @@
-#!groovy​
+#!groovy
 parameters {
         booleanParam(defaultValue: true, description: '', name: 'FULL_BUILD')
     }
