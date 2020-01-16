@@ -96,7 +96,7 @@ if(FULL_BUILD) {
 
 stage('Deploy') {
     node {
-        echo ${params.FULL_BUILD}
+        echo {params.FULL_BUILD}
         def pom = readMavenPom file: "pom.xml"
         def repoPath =  "${pom.groupId}".replace(".", "/") + 
                         "/${pom.artifactId}"
